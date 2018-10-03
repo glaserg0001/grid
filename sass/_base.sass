@@ -1,6 +1,4 @@
-*,
-:before,
-:after
+*, :before, :after
 	padding: 0
 	margin: 0
 	box-sizing: inherit
@@ -8,6 +6,7 @@
 html
 	box-sizing: border-box
 	font-family: sans-serif
+	font-size: 100%
 
 a
 	color: $main
@@ -15,3 +14,56 @@ a
 	transition: all .2s
 	&:hover
 		color: $secondary
+
+ul
+	padding: 0
+	margin: 0
+	list-style: none
+
+.grid
+	padding: 10px
+	display: grid
+
+	// Колонки
+	// grid-template-columns: 300px 300px 300px // определить колонки: колличество и ширина
+	// grid-template-columns: 2fr 1fr 200px
+	// grid-template-columns: repeat(3, 1fr) // 3 колонки по 1 фракции
+	// grid-template-columns: repeat(2, 1fr 2fr) // 2 группы колонок по 1 фракции и 2 фракции
+	// grid-template-columns: 100px repeat(2, 1fr 2fr) // первая колонка 100px, а потом чередование
+	grid-template-columns: minmax(150px, 250px) 1fr 1fr // первая колонка имеет минимальный размер 150px, максимальный размер - 250px
+
+	grid-template-rows: 150px 150px // определить ряды (свойства рядов): высота первого ряда
+	
+	// Высота итемов
+	// grid-auto-rows: 100px // дефолтное значение высоты рядов
+	grid-auto-rows: minmax(100px, auto) // минимальная высота вряде 100px, максимальная - auto
+
+	grid-column-gap: 20px // расстояние между колонками
+	grid-row-gap: 20px // расстояние между рядами
+	grid-gap: 10px // объединение расстояний между блоками
+	// единица измерения fr (фракция)
+	li
+		padding: .625em 1em
+		background-color: $main
+		color: #fff;
+		border-radius: 6px
+		word-wrap: break-word
+		&:nth-child(even)
+			background-color: darken($main, 15%)
+
+.grid2
+	padding: 10px
+	display: grid
+	grid-template-columns: 1fr 1fr 200px
+	grid-auto-rows: 150px
+	grid-column-gap: 20px
+	grid-gap: 10px
+	display: none
+	li
+		padding: .625em 1em
+		background-color: $success
+		color: #fff;
+		border-radius: 6px
+		word-wrap: break-word
+		&:nth-child(even)
+			background-color: darken($success, 15%)
