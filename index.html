@@ -3,11 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/main.js"></script>
 </head>
 <body>
-	<ul class="grid">
+	<ul class="grid" 
+		style="/*display: none;*/"
+		>
 		<li>item-1</li>
 		<li>item-2</li>
 		<li>item-3</li>
@@ -17,19 +20,21 @@
 		<li>item-7</li>
 		<li>item-8</li>
 		<li>item-9</li>
-		<li>item-10</li>
 	</ul>
+<br>
 	<hr>
-	<ul class="grid2">
-		<li>item-1</li>
-		<li>item-2</li>
-		<li>item-3</li>
-		<li>item-4</li>
-		<li>item-5</li>
-		<li>item-6</li>
-		<li>item-7</li>
-		<li>item-8</li>
-		<li>item-9</li>
-	</ul>
+
+	<div class="block"
+		style="/*display: none*/"
+	>
+		<header class="block_item">Header</header>
+		<article class="block_item">
+			<h1>Headline</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni fugiat tenetur maiores eum, repellendus dicta, placeat architecto atque facere itaque voluptates ex, eligendi delectus tempora ducimus officia quo id saepe.</p>
+		</article>
+		<aside class="block_item">Sidebar</aside>
+		<footer class="block_item">Footer</footer>
+	</div>
+
 </body>
 </html>
