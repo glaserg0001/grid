@@ -36,5 +36,19 @@
 		<footer class="block_item">Footer</footer>
 	</div>
 
+	<div class="img">
+		<img src="#"
+		onerror="func(this)"
+		alt="img">
+	</div>
+
+	<script>
+		function func(elem) {
+			console.log(elem.outerHTML);
+			console.log(elem.getAttribute("src"));
+			elem.setAttribute("src", "http://thednetworks.com/wp-content/uploads/2012/01/picture_not_available_400-300.png");
+		}
+	</script>
+
 </body>
 </html>
