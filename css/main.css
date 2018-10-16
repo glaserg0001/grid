@@ -10,6 +10,10 @@ html {
   font-size: 100%;
 }
 
+html, body {
+  height: 100%;
+}
+
 a {
   color: #2196f3;
   text-decoration: none;
@@ -89,4 +93,35 @@ ul {
 
 .block footer {
   grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-gap: 3px;
+  max-width: 615px;
+  margin: 20px auto;
+  line-height: 1.4;
+  background-color: #fff;
+}
+
+.container li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+  text-transform: uppercase;
+  background-color: #96ceb4;
+}
+
+.container li:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container li:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.container li:nth-child(4n) {
+  background-color: #ffcc5c;
 }

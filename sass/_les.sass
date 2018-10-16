@@ -1,0 +1,32 @@
+.container
+	display: grid
+	grid-gap: 3px
+	max-width: 615px
+	margin: 20px auto
+	line-height: 1.4
+	background-color: #fff
+	li
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 2em
+		color: #ffeead
+		text-transform: uppercase
+
+		&:nth-child(1n)
+		background-color: #96ceb4
+
+		&:nth-child(3n)
+			background-color: #88d8b0
+
+		&:nth-child(2n)
+			background-color: #ff6f69
+
+		&:nth-child(4n)
+			background-color: #ffcc5c
+
+[class*=container]:not(.task4), hr
+	// display: none
+
+.container
+	// margin: 0 auto
