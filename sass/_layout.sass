@@ -1,0 +1,81 @@
+// $num: 2
+
+=n($num)
+	&:nth-child(#{$num})
+		@content
+
+img
+	max-width: 100%
+	height: auto
+
+.layout
+	img
+		display: block
+	&_grid
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		grid-gap: 30px
+		max-width: 1100px
+		margin: 0 auto
+		color: #fff
+		text-align: center
+	&_item
+		background-color: #000
+		+n(1)
+			padding-top: 25px
+			img
+			.layout_btn
+				margin-top: 50px
+				background-color: rgba(#4bd8cd, 1)
+				color: #000
+				&:hover
+					background-color: rgba(#4bd8cd, .8)
+		+n(2)
+			background-color: #ff7373
+			display: flex
+			align-items: center
+		+n(3)
+			.layout_btn
+				strong
+					color: #ff7373
+		+n(4)
+			background-color: #cecece
+			padding-top: 25px
+			.layout_caption
+				color: #6b7072
+				strong
+					color: #fff
+
+	&_big
+		grid-column: span 2
+		grid-row: span 2
+	&_wide
+		grid-column: span 2
+
+	&_inner
+		&_left
+			width: 40%
+		&_right
+			width: 60%
+
+	&_caption
+		margin-bottom: 25px
+		font-size: 30px
+		font-weight: 400
+		strong
+			display: block
+			text-transform: uppercase
+			font-weight: 700
+
+	&_btn
+		display: inline-block
+		padding: 10px 25px
+		text-transform: uppercase
+		background-color: rgba(0,0,0, .5)
+		font-size: 15px
+		font-weight: 700
+		color: #fff
+		user-select: none
+		&:hover, &:focus
+			color: darken(#fff, 10%)
+			background-color: rgba(0,0,0, 1)

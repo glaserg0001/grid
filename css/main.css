@@ -8,6 +8,7 @@ html {
   box-sizing: border-box;
   font-family: sans-serif;
   font-size: 100%;
+  line-height: 1.2;
 }
 
 html, body {
@@ -28,6 +29,27 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.links {
+  margin: 5px 0 15px;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.links_title {
+  padding-bottom: 5px;
+  margin-bottom: 6px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.links_list li {
+  margin-bottom: 5px;
+}
+
+.links_list li:last-child {
+  margin-bottom: 0;
 }
 
 .grid {
@@ -124,4 +146,109 @@ ul {
 
 .container li:nth-child(4n) {
   background-color: #ffcc5c;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.layout img {
+  display: block;
+}
+
+.layout_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+.layout_item {
+  background-color: #000;
+}
+
+.layout_item:nth-child(1) {
+  padding-top: 25px;
+}
+
+.layout_item:nth-child(1) .layout_btn {
+  margin-top: 50px;
+  background-color: #4bd8cd;
+  color: #000;
+}
+
+.layout_item:nth-child(1) .layout_btn:hover {
+  background-color: rgba(75, 216, 205, 0.8);
+}
+
+.layout_item:nth-child(2) {
+  background-color: #ff7373;
+  display: flex;
+  align-items: center;
+}
+
+.layout_item:nth-child(3) .layout_btn strong {
+  color: #ff7373;
+}
+
+.layout_item:nth-child(4) {
+  background-color: #cecece;
+  padding-top: 25px;
+}
+
+.layout_item:nth-child(4) .layout_caption {
+  color: #6b7072;
+}
+
+.layout_item:nth-child(4) .layout_caption strong {
+  color: #fff;
+}
+
+.layout_big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.layout_wide {
+  grid-column: span 2;
+}
+
+.layout_inner_left {
+  width: 40%;
+}
+
+.layout_inner_right {
+  width: 60%;
+}
+
+.layout_caption {
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.layout_caption strong {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.layout_btn {
+  display: inline-block;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  user-select: none;
+}
+
+.layout_btn:hover, .layout_btn:focus {
+  color: #e6e6e6;
+  background-color: black;
 }

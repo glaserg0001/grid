@@ -8,47 +8,54 @@
 	<script src="js/main.js"></script>
 </head>
 <body>
+	<nav class="links">
+		<h1 class="links_title">Ссылки</h1>
+		<ul class="links_list">
+			<li><a href="lesson.html">Lessons</a></li>
+			<li><a href="layout.html">Layout</a></li>
+		</ul>
+	</nav>
 	<ul class="grid" 
-		style="/*display: none;*/"
-		>
-		<li>item-1</li>
-		<li>item-2</li>
-		<li>item-3</li>
-		<li>item-4</li>
-		<li>item-5</li>
-		<li>item-6</li>
-		<li>item-7</li>
-		<li>item-8</li>
-		<li>item-9</li>
-	</ul>
-<br>
-	<hr>
-
-	<div class="block"
-		style="/*display: none*/"
+	style="/*display: none;*/"
 	>
-		<header class="block_item">Header</header>
-		<article class="block_item">
-			<h1>Headline</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni fugiat tenetur maiores eum, repellendus dicta, placeat architecto atque facere itaque voluptates ex, eligendi delectus tempora ducimus officia quo id saepe.</p>
-		</article>
-		<aside class="block_item">Sidebar</aside>
-		<footer class="block_item">Footer</footer>
-	</div>
+	<li>item-1</li>
+	<li>item-2</li>
+	<li>item-3</li>
+	<li>item-4</li>
+	<li>item-5</li>
+	<li>item-6</li>
+	<li>item-7</li>
+	<li>item-8</li>
+	<li>item-9</li>
+</ul>
+<br>
+<hr>
 
-	<div class="img">
-		<img src="#"
-		onerror="func(this)"
-		alt="img">
-	</div>
+<div class="block"
+style="/*display: none*/"
+>
+<header class="block_item">Header</header>
+<article class="block_item">
+	<h1>Headline</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni fugiat tenetur maiores eum, repellendus dicta, placeat architecto atque facere itaque voluptates ex, eligendi delectus tempora ducimus officia quo id saepe.</p>
+</article>
+<aside class="block_item">Sidebar</aside>
+<footer class="block_item">Footer</footer>
+</div>
 
-	<script>
-		function func(elem) {
-			console.log(elem.outerHTML);
-			console.log(elem.getAttribute("src"));
-			elem.setAttribute("src", "http://thednetworks.com/wp-content/uploads/2012/01/picture_not_available_400-300.png");
-		}
-	</script>
+<div class="img">
+	<img src="#"
+	onerror="func(this)"
+	alt="img">
+</div>
+
+<script>
+	function func(elem) {
+		console.log(elem.outerHTML);
+		console.log(elem.getAttribute("src"));
+		elem.setAttribute("src", "http://thednetworks.com/wp-content/uploads/2012/01/picture_not_available_400-300.png");
+	}
+</script>
 
 </body>
 </html>
